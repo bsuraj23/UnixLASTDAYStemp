@@ -1,0 +1,32 @@
+File redirection:
+
+Output from OS can be redirected to terminal , monitor or file( Hard disk)
+
+
+Input will be taken from Keyboard, file or other programs 
+
+
+> : indicates  output redirect
+
+>!  :  same as above but over rides no clobeer option in csh
+
+
+>>   append output
+
+>>!    :  same as above but over rides no clobeer option in csh
+
+
+|   pipe output to another command
+
+<   input redirection
+
+<<String     read fro standard input until String is encountereed as the only thing on the line 
+
+<<\String  same as above but does not allow shell substtution
+
+
+Example 
+
+$cat NIT NEO > file3
+
+the above NIT NEO files will be appended and output will be stored in file3 and if file 3 not present then it will create a new file , if no clobber option is  used then no new file will be created
