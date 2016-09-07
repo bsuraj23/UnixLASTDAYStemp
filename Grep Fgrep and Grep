@@ -1,0 +1,51 @@
+Grep: it displays the lines after filtering it with given pattern
+
+
+$grep sales NIT:  dispalys the lines which contain sales in NIT file  
+
+to search for more than one pattern use it in single qoutes and to search for one than one file give it as two parameters with spaces 
+
+options
+-c---   counting occurence
+-n--  dispaly line number
+-v--- deleting line
+
+-l--- displaying file names
+-i--- ignore case sensitivity
+-n---dispaly line number of text
+
+
+
+$grep hello NIT----  it finds hello string in  NIT file 
+
+
+$grep  heloo *--  it finds hello string in all files present in directory
+$grep Unix  NIT1  NIT2 NIT3 NIT4 NIT5 NIT6 NIT7 NIT8  finds Unix string specified files
+$grep -i Unix NIT--- displays all string which are starting with capital or small u/U..
+$grep -c Unix NIT-- It counts all Unix strings ,how many times repeated
+$grep- n Unix NIT-- Prints the line number of unix string 
+$grep -l Unix*-- It prints all file names where unix string found 
+$grep "c[ae]ll" NIT -- it searhes all lines which are matching call cell
+$grep "R..u" NIT --lines matching with R and u are dispalyed 
+$grep "\<Unix\>" NIT -- It searches only the word Unix
+
+Anchors
+
+^  - start of the line 
+$-- end of the line  
+
+$grep  "^U" NIT-- prints all lines which are starting with U
+$grep "^Unix " NIT--  prints all lines which are starting with Unix string 
+$grep "x$"  --- prints all lines which are ending with 'x'
+$grep  "[0-9]$" NIT--prints all lines which are ending with digits
+$grep "^[abc]" NIT --prints all lines starting with a b and c 
+$grep "^[^abc]" NIT prints all lines which are not starting with a b and c 
+
+$grep "^$" NIT -- dispalys all blank lines from NIT
+$grep -c "^$" NIT-- displays all blank lines numbers 
+$grep "^...$" NIT-- displays all lines having only 3 charracters
+
+
+$fgrep --powerfull than grep and mostly used for  to search for several targets at once 
+
+$egrep-- powerful than grep and fgrep ,,can use it for mullti ple tagerts like in fgrep and for regular expression in grep both freatures with it 
