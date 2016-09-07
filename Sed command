@@ -1,0 +1,29 @@
+Sed editor:
+
+This is abbreviated as stream line editor and is non interactive 
+
+same as other editors but does not have machanism for interactivity
+
+$sed '5q' NIT--  dispalys first five line 
+
+$sed '2p' NIT---   dispalys all lines but 2nd line will be dispalyed twice 
+
+$sed -n '2p'NIT---dispalays only 2nd line 
+
+
+$sed -n '3d'NIT---  this command displays all line except 3rd line 
+
+
+$sed -n-e '2q' -e '9p' NIT---displays 2nd and 3rd line 
+
+$sed -n '/RAJU/p'NIT----dispalys all line conatainig patter RAJU
+
+$sed -n '/^RAJU/w NIT1' NIT---this command searches the specified pattern containing lines and saves those lines into files  NIT1
+
+$sed -n'/^Raju/p' NIT--it will dispaly the lines that are begining with pattern raju
+
+
+$sed '1,5s/Raju/gupta/' NIT---displays all lines which contain raju but it will be replaced by gupta 
+
+$sed 'i\`NIT ---this commmand palces a blank line after each line 
+
