@@ -1,0 +1,8 @@
+Pipes: operators used to redirect output to file or other command then it called pipies in Unix 
+
+Output of one command will become input to other 
+
+Ex: $Who > userlist 
+here the output of who will be stored in userlist file .
+
+2.$who |sort > sortwho    ::   here the putput of who command will be given to sort and storeed in sortwho file 
