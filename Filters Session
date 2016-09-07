@@ -1,0 +1,88 @@
+Filters:  IF any command accepts the input and perfoms manipulation and gives output then its caled Filters
+
+
+
+
+$head:  displays file from begining of line default 10 line 
+
+$head NIT : displays content as 10 lines 
+
+$head -3 NIT     :  displays content as 10 lines  
+
+$head -15 NIT     :  displays content as 15 lines
+
+
+
+$tail NIT::   displays content  from below  as 10 lines 
+
+$tail -3 NIT     :  displays   content  from below  content as 10 lines  
+
+$tail -15 NIT     :  displays   content  from below  content as 15 lines
+
+-- Taking Prinout---
+
+$lp [options][Filename]
+
+$lp NIT
+$lp Neo
+$lp -w NIT
+
+-w   --- sends a messege to uuser when a file is printed
+-n  --- print number of copoes
+-p list---  prints  the page number specfied by the list
+-q level -- sets the priority level for the pribt job
+
+$lpstat:;  to seee the status of the printing job
+
+
+$cancel -- to camcel the printing job
+
+$cancel -lp-13 --here 13 is the job id ..
+
+
+
+$cut :; it dispalys the character from the file 
+
+
+$cat NIT
+
+101   ram1
+102   ram2
+103   ram3
+104    ram4
+105    ram5
+106    ram6 
+
+$cut -c2,5 NIT
+
+displays second and fifth character
+
+
+$cut -f 1,4 NEO
+
+displays 1 to 4 fields from NEO file 
+
+
+
+
+Sort is used to sort the content in a file .Acoording to Ascii characters  numbers, capitals and then smalller numbers 
+
+
+$sort options post1 post2 
+
+
+-b--- igmore leading blanks spaces and tabs
+-d---  dict order only letter digit and spaces and tabs 
+-f--   ignores case
+-i--ignore non pritable chacter
+-m--- merge files that have already been sorted
+-n-- numeric sort
+-r--reverse sort
+-u--- unique
+
+
+
+
+
+
+ 
