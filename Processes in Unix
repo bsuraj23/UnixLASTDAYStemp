@@ -1,0 +1,117 @@
+Processes:
+
+
+UniX is a ulti user OS.and process from different user can be at same time run in that OS
+
+OPtions :
+
+-a all processes
+-e  -- environment / everything 
+-g  process group leader as well
+
+-l-- long format
+
+-u-- user oriented result 
+
+-x-- even processes not executed from this terminal
+
+-f-- full listing 
+
+-w-- report first 132 characters fro line 
+
+$ps
+
+given info about the processes running in OS
+
+$ps -a
+
+If want to know whats are alll processes runnig for all users who are logged in then use -a option
+
+$ps -u user_name_or_ID  
+
+the above command gives the info w.r.t that user only 
+
+$ps -t tty3d
+
+If want to know processes that are run from other particluar terminal then -t will be handy
+
+
+$ps-f 
+Any more additional info then -f will be handy
+
+
+Background processes:
+
+use & ambersend symbol against any command to make that process run in background .Using & makes sure that process is run in background but disadvantage is that youill not know if sucessfully exected or not 
+
+and if output has been generated , or command sucesssfully run.Even it gets terminated if user logs off
+
+$sort hello.dat >NIt..out & 176 53  ((176 and 53 are processids and job ids assigned by user himself))
+
+
+SO for above disadvantage there is other command which is in family of background process only but confirms and makes sure that its executed sucesfully or for any 
+command if no output is redirected then its stored in nohup.out 
+
+$nohup sort hello.dat >NIt.out
+
+
+Killing a process
+
+How to kill a process
+
+You have to know the process id or simply in unix terms its PID
+
+
+
+$ps
+$kill 6173
+
+to confirm the kill you can use -9 
+
+
+$kill  -9  6173
+
+
+
+$at  and batch $batch((do be done by student )) __ 
+
+
+
+
+
+&& construct and || construct
+
+
+
+if two commands are jointly used then sucess of one(first) will execute the other for && and failure of one (first command )) will execute the other 
+
+Ex:
+
+$ sort bigdata >/temp/sortout && mv /temp/sortout bigdata
+
+here as && is used only if file bigdata is sorted or if file bigdata exists then  move command wilbe executed .its same as 
+
+
+
+if sort bigdata >/temp/sortout
+then
+  mv /temp/sortout bigdata
+
+fi
+
+
+the command 
+[-z "$EDITOR"]&& EDITOR=/bin/ed
+
+
+
+
+|| command 
+
+
+can be understood it as if first fails then only second section of command is executed 
+
+
+$grep "$name" pbook || echo "Couldnot find $name "
+
+
