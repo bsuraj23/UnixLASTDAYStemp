@@ -1,0 +1,49 @@
+Echo is useful for many purposes but still inadequate to get only columns from file or any data
+
+for this disadvantage we have printf command 
+
+same as c language printf command 
+
+
+$printf "this is a number %d" 10
+
+this is a number 10
+
+d---  interger
+u-- Unsigned Int
+o-- octal int
+x-- hexadecimal int
+X-- Haxa decimal using A-F
+c-- single char
+s--String
+b-- String containing backslashes
+%-- percent sign
+
+$printf "the octal value for %d is %o " 20 20
+
+the octal value for 20 is 24
+
+$printf  "A string %s and a character %c \n " hello A
+
+A string hello and a character A
+
+
+$printf "%d \n % d\n  % d\n "10 10 20
+
+10
+ -10
+20 
+
+$printf
+$printf
+$printf
+$printf
+$printf
+$printf
+$printf
+$printf
+$printf
+$printf
+$printf
+$printf
+$printf
