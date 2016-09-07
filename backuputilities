@@ -1,0 +1,82 @@
+backup utilities:
+every thing in unix opertaing system is stored in  file and on tape or harddisk.We need to take backup .
+
+$tar [options]<Device>
+
+options:
+c -copy
+x- extract
+
+t-table of content
+
+
+ex:
+$tar -cvf /tape device/author.sql*
+$tar -xvf /tape device 
+
+the first line will copy all or take backup of author sql table to device .
+In second it will extract or take backkupof the specified tape
+
+-----
+Histroy
+
+depending upon the shell used it can be noted that each and every shell have different integer number to store the history of last typed command
+
+these variables can be used in script and output can be found ,,also shell set limit can be discovered
+
+set History=100 savehist=50
+
+$history 10 
+
+built in command to print last 10 histroy done in OS or last 10 commands used 
+
+you can repeat the last command using $!! command
+
+C shell History SUbstitute
+
+!!--repeat the last command 
+
+!n--repeat the last n commands
+
+!-n   --repeat command n from last
+!str--repeat   command that starts with str
+
+!?str?--repeat command with string str any where on line
+
+!str?%-select the first argument that has the string str in it 
+!:n--  select the n argument from the last commmand
+!:n-m--select the nth from mth from tha last command
+!^--sleect the first argument from the last command 
+!$ --select all arguments from the last comand 
+
+
+
+
+----------------
+
+Identity
+
+you are a user and associated with one or many groups in the OS environment 
+
+$id 
+
+output--uid-1101(frank) gid=89(staff)
+
+On other systems it might also display group info
+
+$id 
+
+output--uid-1101(frank) gid=89(staff)  groups =10 (staff),5 operator,14 sysadmin,110(outs)
+
+
+
+
+-------------
+
+you can define limit for a size on Unix Os.
+
+to set it
+
+$ulimit 2097152 
+
+this will make sure that any file created on disk will not exceed morethan the above set limit..
